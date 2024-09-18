@@ -9,6 +9,8 @@ import iconSkills from './../../../images/icon/iconsSkillsSprite.svg'
 
 
 
+
+
 export const Skills = () => {
     return (
         <SSkills>
