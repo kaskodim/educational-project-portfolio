@@ -43,7 +43,7 @@ export const Main = () => {
 };
 
 const SMain = styled.main`
-    margin-top: 84px;
+    margin-top: 128px;
     display: flex;
     min-height: 496px;
 `
