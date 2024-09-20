@@ -17,7 +17,7 @@ export const GlobalStyle = createGlobalStyle`
         sans-serif;
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale;
-        
+        background: radial-gradient(90.6% 78.78% at 93.96% 12.39%, rgb(234, 241, 247) 0%, rgb(238, 236, 247) 100%);
     }
 
     a {

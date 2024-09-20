@@ -1,6 +1,7 @@
 import React from 'react';
 
 
+
 type iconPropsType = {
     src: string
     iconId: string
@@ -8,11 +9,15 @@ type iconPropsType = {
     height?: string
     viewBox?: string
     fill?: string
+    text?: string
+    className?: string
 }
+
+
 
 export const Icon = (props: iconPropsType) => {
     return (
-            <svg
+            <svg className={props.className}
                 xmlns="http://www.w3.org/2000/svg" width={props.width || "50"}
                 height={props.height || "50"}
                 viewBox={props.viewBox || "0 0 50 50"}
@@ -21,4 +26,3 @@ export const Icon = (props: iconPropsType) => {
             </svg>
     );
 };
-

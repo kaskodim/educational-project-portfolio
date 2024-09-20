@@ -25,12 +25,11 @@ const SHeader = styled.header`
     height: 84px;
     background-color: #FCFCFC;
     position: fixed;
+    z-index: 999999;
     top: 0;
     right: 0;
     left: 0;
     padding: 24px 0;
-
-
     box-shadow: 0 1px 3px 0 #00000033,
                 0 2px 1px 0 #0000001F,
                 0 1px 1px 0 #00000024;

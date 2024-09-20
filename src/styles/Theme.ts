@@ -12,6 +12,5 @@ export const Theme = {
             serviceFont: '#818080',
             mainServiceFont: '#000000B2'
         }
-
-    }
+    },
 }

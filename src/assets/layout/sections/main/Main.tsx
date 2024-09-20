@@ -44,15 +44,14 @@ export const Main = () => {
 
 const SMain = styled.main`
     margin-top: 84px;
-    background: radial-gradient(90.6% 78.78% at 93.96% 12.39%, rgba(220, 227, 228, 0.71) 0%, #FCFCFC 100%);
     display: flex;
-    min-height: 100vh;
+    min-height: 496px;
 `
 
 const PerformanceText = styled.div`
     max-width: 554px;
     max-height: 250px;
-    outline: 1px solid blue;
+    outline: 1px solid #0D54BE;
 `
 
 const SmallText = styled.h2`
