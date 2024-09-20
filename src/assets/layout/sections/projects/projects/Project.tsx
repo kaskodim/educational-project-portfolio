@@ -1,5 +1,9 @@
 import React from 'react';
 import styled from "styled-components";
+import {Theme} from "../../../../../styles/Theme";
+import {Button} from "../../../../../coponents/button/button";
+import {Icon} from "../../../../../coponents/icon/Icon";
+import arrow from './../../../../images/decorativeElements/arrow.svg'
 
 type ProjectPropsType = {
     text: string
@@ -7,13 +11,19 @@ type ProjectPropsType = {
 }
 
 
-
 export const Project = (props: ProjectPropsType) => {
     return (
         <SProject>
             <Image src={props.src} alt=''/>
             <Text>{props.text}</Text>
-            <BtnProject>Learn More</BtnProject>
+            <Button>
+                <span>Learn More </span>
+                <Icon src={arrow}
+                      iconId={'arrow'}
+                      width={'16px'}
+                      height={'9px'}
+                      viewBox={'0 0 16 9'}/>
+            </Button>
         </SProject>
     );
 };
@@ -21,10 +31,21 @@ export const Project = (props: ProjectPropsType) => {
 const SProject = styled.div`
     display: flex;
     flex-direction: column;
-    background-color: rgba(38, 44, 77, 1);
-    border: 1px solid red;
-    width: 380px;
-    height: 430px;
+    align-items: center;
+    background-color: ${Theme.colors.secondaryDark};
+    width: 100%;
+    padding-bottom: 12px;
+    color: ${Theme.colors.font.lightFont};
+    border: 3px solid;
+    border-image: linear-gradient(0deg, ${Theme.colors.gradient.primaryGr.oneColor}, ${Theme.colors.gradient.primaryGr.twoColor}) 1;
+
+    
+    
+    &:hover {
+
+        //border: 3px solid;
+        border-image: linear-gradient(0deg, ${Theme.colors.gradient.secondaryGr.oneColor}, ${Theme.colors.gradient.secondaryGr.twoColor}) 1;
+    }
 `
 
 const Image = styled.img`
@@ -32,9 +53,11 @@ const Image = styled.img`
 `
 
 const Text = styled.p`
-color: white;
-`
+    margin: 20px auto;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: center;
+    padding: 10px;
 
-const BtnProject = styled.button`
-width: 100px;
 `

@@ -34,7 +34,9 @@ export const Skills = () => {
 };
 
 const SSkills = styled.div`
-    height: 474px;
+
+    padding-top: 30px;
+    padding-bottom: 40px;
 `
 
 const Wrapper = styled.div`

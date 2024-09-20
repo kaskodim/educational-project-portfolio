@@ -2,6 +2,7 @@ export const Theme = {
     colors: {
         primary: '#eae7f6',
         secondary: '#343D68',
+        secondaryDark: '#262C4D',
         accent: '#E84949',
 
         font: {
@@ -18,8 +19,8 @@ export const Theme = {
                 twoColor: '#20ECD3',
             },
             secondaryGr: {
-                oneColor: '#343D68',
-                twoColor: '#E84949',
+                oneColor: '#0eb50e',
+                twoColor: '#ffff00',
             }
         }
     },

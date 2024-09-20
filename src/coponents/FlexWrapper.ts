@@ -26,10 +26,7 @@ export const FlexWrapper = styled.div<FlexWrapperPropsType>`
 /**
  *
  *
- * // const stylesForRed = css`
- * //     background: red;
- * //     border: 4px solid black;
- * // `
+ * //
  * //
  * // const stylesForBlue = css`
  * //     background: blue;
