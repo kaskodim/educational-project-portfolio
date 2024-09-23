@@ -18,7 +18,7 @@ export const Button = styled.button`
     margin-top: auto;
 
     &:hover {
-        animation: gradientAnimation 2s ease-in-out;
+        animation: gradientAnimation 2s ease-in-out infinite;
     }
 
 
