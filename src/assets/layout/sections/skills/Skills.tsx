@@ -50,8 +50,6 @@ const WrapperSkills = styled.div`
     flex-direction: column;
     justify-content: center;
     text-align: center;
-    border: 1px solid blue;
-
 `
 
 const SkillsText = styled.h4`

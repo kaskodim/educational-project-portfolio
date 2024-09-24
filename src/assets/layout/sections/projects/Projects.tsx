@@ -15,8 +15,6 @@ export const Projects = () => {
         <SProjects>
             <Container>
 
-
-
                 <SectionTitle>
                     <WrapperTitle>
                         <SIcon src={iconsSocial}
@@ -39,9 +37,6 @@ export const Projects = () => {
                              text={'Made an I.P address tracking website.'}/>
                 </ProjectsWrapper>
 
-
-
-
             </Container>
         </SProjects>
     );
@@ -63,7 +58,6 @@ const WrapperTitle = styled.div`
     align-items: center;
     justify-content: center;
     padding-top: 30px;
-
 `
 
 const SIcon = styled(Icon)`
@@ -75,20 +69,16 @@ const Span = styled.span`
     margin-left: 16px;
 `
 
-
 const Text = styled.h3`
     text-align: center;
     margin: 8px auto 24px;
     font-size: 18px;
     font-weight: 400;
     line-height: 26px;
-
 `
-
 
 const ProjectsWrapper = styled.div`
     display: flex;
     justify-content: space-between;
     gap: 58px;
-
 `

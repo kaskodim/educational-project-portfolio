@@ -42,8 +42,6 @@ const SProject = styled.div`
     
     
     &:hover {
-
-        //border: 3px solid;
         border-image: linear-gradient(0deg, ${Theme.colors.gradient.secondaryGr.oneColor}, ${Theme.colors.gradient.secondaryGr.twoColor}) 1;
     }
 `

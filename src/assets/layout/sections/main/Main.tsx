@@ -51,7 +51,6 @@ const SMain = styled.main`
 const PerformanceText = styled.div`
     max-width: 554px;
     max-height: 250px;
-    outline: 1px solid #0D54BE;
 `
 
 const SmallText = styled.h2`
@@ -85,7 +84,6 @@ const PhotoWrapper = styled.div`
     position: relative;
     height: 496px;
     padding: 50px 25px;
-    border: 1px solid ${Theme.colors.font.secondaryFont};
 `
 
 const Photo = styled.img`
