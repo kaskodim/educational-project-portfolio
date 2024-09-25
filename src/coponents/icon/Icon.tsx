@@ -9,7 +9,6 @@ type iconPropsType = {
     height?: string
     viewBox?: string
     fill?: string
-    text?: string
     className?: string
 }
 
@@ -26,3 +25,4 @@ export const Icon = (props: iconPropsType) => {
             </svg>
     );
 };
+

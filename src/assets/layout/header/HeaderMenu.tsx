@@ -1,48 +1,71 @@
 import React from 'react';
 import styled from "styled-components";
-import {Icon} from "../../../coponents/icon/Icon";
-import iconsSocial from '../../images/icon/iconsSocialSprite.svg'
-import {FlexWrapper} from "../../../coponents/FlexWrapper";
-import {Theme} from "../../../styles/Theme";
+import { Theme } from "../../../styles/Theme";
 
-export const HeaderMenu = () => {
+type MenuItemPropsType = {
+    text: string;
+    href: string;
+    icon?: React.ComponentType<React.SVGProps<SVGSVGElement>>;
+};
+
+type HeaderMenuProps = {
+    menuItems: MenuItemPropsType[];
+};
+
+export const HeaderMenu: React.FC<HeaderMenuProps> = ({ menuItems }) => {
     return (
         <SHeaderMenu>
             <ul>
-                <li><a href="">Skills</a></li>
-
-                <li>
-                    <a href="">
-                        <FlexWrapper columnGap={'8px'}>
-                            <Icon src={iconsSocial}
-                                  iconId={'gears'}
-                                  width={'24px'}
-                                  height={'20px'}
-                                  viewBox={'0 0 24 24'}
-                                  fill={'green'}></Icon>
-
-                            <span>Projects</span>
-                        </FlexWrapper>
-                    </a>
-                </li>
-
-                <li><a href="">Contact me</a></li>
+                {menuItems.map((item, index) => (
+                    <ListItem key={index}>
+                        <Link href={item.href}>
+                            {item.icon && (
+                                <IconTextWrapper>
+                                    <item.icon />
+                                    <span>{item.text}</span>
+                                </IconTextWrapper>
+                            )}
+                            {!item.icon && <span>{item.text}</span>}
+                        </Link>
+                    </ListItem>
+                ))}
             </ul>
         </SHeaderMenu>
     );
 };
 
 const SHeaderMenu = styled.nav`
-
     ul {
         display: flex;
         gap: 40px;
-        
+
         a {
             font-size: 18px;
-            line-height: 26px;
-            color: ${Theme.colors.font.darkFont}
+            color: ${Theme.colors.font.darkFont};
+        
         }
     }
+`
+
+const IconTextWrapper = styled.div`
+    display: flex;
+    gap: 8px;
+    
+    svg {
+        fill: ${Theme.colors.font.darkFont};
+    }
+`
+
+const ListItem = styled.li`
+    :hover{
+        color: ${Theme.colors.font.secondaryFont};
+        
+        svg{
+            fill: ${Theme.colors.font.secondaryFont};
+        }
+    }
+`
+
+const Link = styled.a`
     
 `

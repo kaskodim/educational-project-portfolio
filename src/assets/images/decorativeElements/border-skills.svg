@@ -11,7 +11,7 @@
         </linearGradient>
         <linearGradient id="secondaryGradient" x1="64.6429" y1="75.0001" x2="-14.8644" y2="24.6316" gradientUnits="userSpaceOnUse">
             <stop stop-color="inherit"/>
-            <stop offset="1" stop-color="inherit"/>
+            <stop offset="1" stop-color="inheritinherit"/>
         </linearGradient>
     </defs>
 </svg>
